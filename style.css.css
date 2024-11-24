@@ -1,0 +1,121 @@
+
+body {
+    text-align: center;
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+    /* Style du bouton */
+    .styled-button {
+    font-size: 18px;            /* Taille du texte */
+    padding: 10px 25px;         /* Espacement interne */
+    background-color: red;  /* Couleur de fond (bleu) */
+    color: white;               /* Couleur du texte */
+    border: none;               /* Enlever les bordures */
+    border-radius: 5px;         /* Arrondir les bords */
+    cursor: pointer;            /* Changer le curseur en pointer */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Ombre autour du bouton */
+    transition: background-color 0.3s ease; /* Effet de transition pour le changement de couleur */
+}
+
+/* Style lorsque le bouton est survolé */
+.styled-button:hover {
+    background-color: #0b58af;  /* Changement de couleur lors du survol */
+}
+
+.contenu {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Space between for even spacing */
+    align-items: flex-start; /* Align items at the top */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    flex: 1;
+    padding: 0 15px;
+    margin-top: 20px;
+}
+
+.footer-col h3 {
+    margin-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: red;
+}
+.curseur {
+   
+    cursor: pointer;
+}
+
+
+/* Footer Bottom Section */
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #bbb;
+}
+
+/* Style for the image in the footer */
+.footer .img2 {
+    margin-left: 10px;
+    flex: 0; /* Keep the image size fixed */
+}
+
+.footer p {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.hh {
+    padding-top: 200px;
+}
+.footer-col1 {
+    margin-top: 20px;
+}
+#message {
+    display: none; 
+    color: green; 
+    margin-top: 10px;
+}
+.cond {
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+.chat {
+    margin-top: 50px;
+}
+

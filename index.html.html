@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Paiement</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="style.css.css">
+
+</head>
+
+<body>
+    <img  class="cond" src="images\LOGO-SATIM.png" alt="Description de l'image" width="500" height="400">
+    <h1>Conditions Générales</h1>
+    <label>
+        <input  type="checkbox" id="termsCheckbox">
+        J'accepte les <a href="#" id="termsLink">conditions générales</a>
+    </label>
+    <p id="message" style="display: none;">Merci d'avoir accepté les conditions générales !</p>
+    
+    <script>
+        const termsCheckbox = document.getElementById('termsCheckbox');
+        const message = document.getElementById('message');
+        const termsLink = document.getElementById('termsLink');
+    
+        termsCheckbox.addEventListener('change', function() {
+            if (termsCheckbox.checked) {
+                message.style.display = 'block'; // Afficher le message
+            } else {
+                message.style.display = 'none'; // Masquer le message
+            }
+        });
+    
+        // Gestion du clic sur le lien "conditions générales"
+        termsLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Empêcher le comportement par défaut du lien
+            window.open('conditions.html', '_blank', 'width=600,height=400'); // Ouvrir une nouvelle fenêtre
+        });
+    </script>
+    <h2 class="chat"> SATIM Open a chatbot to solve your problems </h2>
+     <button class="styled-button" onclick="window.location.href='https://l.facebook.com/l.php?u=https%3A%2F%2Ftripetto.app%2Frun%2F8W4JLR6JLZ%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR0iv-KIZ1-R7ssqyz1HDXS8KiGCw-GwIR7r8RfiFbFA3RfcHHutQRsl7cQ_aem_ym9f8g-pFbdteaESKg7Gfg&h=AT25uMxwYLQqf8eAS0kk1-2bNbozFw9I4Pr0BblY8zWZopOgIiWYwTyAN_LFzF8etoKxe1ElWcWJ6mzOEAGCzffjVnQcuw1Q6QgvV6kKDwfdPYdlxmlEHz6p7t0DJrZgGIdOSg';">
+        Go to Chatbot
+    </button>
+    
+    <div class="hh">
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Image avant la première colonne -->
+                <img class="img2" src="images\sat.png" alt="Description de l'image" width="200" height="100">
+
+                <!-- Colonne 1 -->
+                <div class="footer-col">
+                    <div class="footer-col1">
+                    <p>Adresse: 33, Route de Ouled Fayet, Chéraga - Alger</p>
+                    <p>Téléphone: + 213 (21) 99 49 00 / +213 (21) 99 49 10</p>
+                    <p>Fax: + 213 (21) 99 49 13</p>
+                    <p>Email: satim@satim.dz Email RH: recrute@satim.dz</p>
+                    <p>Sur les RS:</p>
+                </div>
+                </div>
+
+               
+
+                <!-- Colonne 3 -->
+                <div class="footer-col">
+                    <h3>Accès rapide</h3>
+                    <ul>
+                        <li><a href="https://www.satim.dz/index.php/fr/">Satim</a></li>
+            
+                    </ul>
+                    
+                    <img class="curseur" src="images\baridi.png" width="100px" height="100px">
+                    <img  class="curseur" src="images\algPoste.png" width="50px" height="50px">
+                    <img class="curseur" src="images\BNA.png" width="50px" height="50px">
+                    <img  class="curseur" src="images\agb.png" width="50px" height="50px">
+                
+                </div>
+            </div>
+
+            <!-- Footer Bottom Section -->
+            <div class="footer-bottom">
+                <p>&copy; SATIM 2020</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
